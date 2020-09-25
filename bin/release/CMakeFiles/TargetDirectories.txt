@@ -1,0 +1,4 @@
+D:/cpp_projects/telegram_bot/bin/release/CMakeFiles/TelegramBot.dir
+D:/cpp_projects/telegram_bot/bin/release/CMakeFiles/INSTALL.dir
+D:/cpp_projects/telegram_bot/bin/release/CMakeFiles/ALL_BUILD.dir
+D:/cpp_projects/telegram_bot/bin/release/CMakeFiles/ZERO_CHECK.dir
