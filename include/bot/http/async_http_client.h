@@ -21,7 +21,7 @@ public:
 	
 	AsyncHttpClient(std::string_view url, std::string_view bot_token);
 	
-	boost::property_tree::ptree send_request(std::string_view method, const std::vector<std::pair<std::string, std::string>>& args = std::vector<std::pair<std::string, std::string>>()) const;
+	boost::property_tree::ptree send_request(std::string_view method, const std::vector<std::pair<std::string, std::string>>& args = std::vector<std::pair<std::string, std::string>>(), bool send_file = false) const;
 	
 private:
 	std::string url;

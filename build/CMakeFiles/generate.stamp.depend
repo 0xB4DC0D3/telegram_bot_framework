@@ -18,7 +18,7 @@ C:/Program Files/CMake/share/cmake-3.18/Modules/Platform/Windows-MSVC.cmake
 C:/Program Files/CMake/share/cmake-3.18/Modules/Platform/Windows.cmake
 C:/Program Files/CMake/share/cmake-3.18/Modules/Platform/WindowsPaths.cmake
 C:/Program Files/CMake/share/cmake-3.18/Modules/SelectLibraryConfigurations.cmake
-D:/cpp_projects/telegram_bot/CMakeLists.txt
-D:/cpp_projects/telegram_bot/build/CMakeFiles/3.18.1/CMakeCXXCompiler.cmake
-D:/cpp_projects/telegram_bot/build/CMakeFiles/3.18.1/CMakeRCCompiler.cmake
-D:/cpp_projects/telegram_bot/build/CMakeFiles/3.18.1/CMakeSystem.cmake
+D:/cpp_project/telegram_bot/CMakeLists.txt
+D:/cpp_project/telegram_bot/build/CMakeFiles/3.18.3/CMakeCXXCompiler.cmake
+D:/cpp_project/telegram_bot/build/CMakeFiles/3.18.3/CMakeRCCompiler.cmake
+D:/cpp_project/telegram_bot/build/CMakeFiles/3.18.3/CMakeSystem.cmake

@@ -16,9 +16,10 @@ endif()
 
 # нахождение boost
 set(Boost_USE_STATIC_LIBS ON)
-find_package(Boost 1.74.0 REQUIRED COMPONENTS system date_time regex)
+find_package(Boost 1.74.0 REQUIRED COMPONENTS system date_time regex filesystem)
 
 # нахождение openssl
+set(OPENSSL_USE_STATIC_LIBS TRUE)
 find_package(OpenSSL REQUIRED)
 
 file(GLOB SOURCES 
@@ -36,6 +37,8 @@ target_include_directories(${PROJECT_NAME} PUBLIC
 target_link_libraries(${PROJECT_NAME} 
     ${Boost_LIBRARIES} 
     ${OPENSSL_LIBRARIES}
+	OpenSSL::Crypto
+	"crypt32.lib"
 )
 target_compile_definitions(${PROJECT_NAME} PUBLIC -D_WIN32_WINNT=0x0601 -DBOOST_BIND_GLOBAL_PLACEHOLDERS)
 

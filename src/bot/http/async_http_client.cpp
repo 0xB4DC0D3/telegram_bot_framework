@@ -2,7 +2,7 @@
 
 AsyncHttpClient::AsyncHttpClient(std::string_view url, std::string_view bot_token) : url { url }, bot_token { bot_token } {}
 
-boost::property_tree::ptree AsyncHttpClient::send_request(std::string_view method, const std::vector<std::pair<std::string, std::string>>& args) const {
+boost::property_tree::ptree AsyncHttpClient::send_request(std::string_view method, const std::vector<std::pair<std::string, std::string>>& args, bool send_file) const {
 	boost::asio::ssl::context ctx { boost::asio::ssl::context::sslv23_client };
 	ctx.set_default_verify_paths();
 	
@@ -71,9 +71,15 @@ boost::property_tree::ptree AsyncHttpClient::send_request(std::string_view metho
 	std::istringstream input(static_cast<std::string>(_response.substr(new_line_pos, _response.find_last_of('}') + 1 - new_line_pos)));
 	boost::property_tree::read_json(input, json);
 	
+	std::ostringstream oss;
+	boost::property_tree::json_parser::write_json(oss, json);
+	
+	std::cout << oss.str() << std::endl;
+	
 	if (json.get<bool>("ok", false)) {
 		return json.get_child("result");
 	} else {
-		throw std::exception { "Failed to send request" };
+		//throw std::exception { "Failed to send request" };
+		return json;
 	}
 }

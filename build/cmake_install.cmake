@@ -1,8 +1,8 @@
-# Install script for directory: D:/cpp_projects/telegram_bot
+# Install script for directory: D:/cpp_project/telegram_bot
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files/TelegramBot")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/TelegramBot")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -35,28 +35,28 @@ endif()
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
     list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-     "D:/cpp_projects/telegram_bot/bin/debug/TelegramBot.exe")
+     "D:/cpp_project/telegram_bot/bin/debug/TelegramBot.exe")
     if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
         message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
         message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-file(INSTALL DESTINATION "D:/cpp_projects/telegram_bot/bin/debug" TYPE EXECUTABLE FILES "D:/cpp_projects/telegram_bot/build/Debug/TelegramBot.exe")
+file(INSTALL DESTINATION "D:/cpp_project/telegram_bot/bin/debug" TYPE EXECUTABLE FILES "D:/cpp_project/telegram_bot/build/Debug/TelegramBot.exe")
   endif()
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
     list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-     "D:/cpp_projects/telegram_bot/bin/release/TelegramBot.exe")
+     "D:/cpp_project/telegram_bot/bin/release/TelegramBot.exe")
     if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
         message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
         message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-file(INSTALL DESTINATION "D:/cpp_projects/telegram_bot/bin/release" TYPE EXECUTABLE FILES "D:/cpp_projects/telegram_bot/build/Release/TelegramBot.exe")
+file(INSTALL DESTINATION "D:/cpp_project/telegram_bot/bin/release" TYPE EXECUTABLE FILES "D:/cpp_project/telegram_bot/build/Release/TelegramBot.exe")
   endif()
 endif()
 
@@ -68,5 +68,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "D:/cpp_projects/telegram_bot/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "D:/cpp_project/telegram_bot/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

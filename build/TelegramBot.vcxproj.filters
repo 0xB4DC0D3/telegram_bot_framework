@@ -1,22 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="D:\cpp_projects\telegram_bot\src\bot\api.cpp">
+    <ClCompile Include="D:\cpp_project\telegram_bot\src\bot\api.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\cpp_projects\telegram_bot\src\bot\http\async_http_client.cpp">
+    <ClCompile Include="D:\cpp_project\telegram_bot\src\bot\http\async_http_client.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\cpp_projects\telegram_bot\src\main.cpp">
+    <ClCompile Include="D:\cpp_project\telegram_bot\src\bot\utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cpp_project\telegram_bot\src\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\cpp_projects\telegram_bot\CMakeLists.txt" />
+    <CustomBuild Include="D:\cpp_project\telegram_bot\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{E2F417ED-39AB-358C-8C58-074E7F6DEA1B}</UniqueIdentifier>
+      <UniqueIdentifier>{9B6D4D6C-64CB-34B8-9C35-CFE0255D9B07}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

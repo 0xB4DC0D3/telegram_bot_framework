@@ -1,0 +1,10 @@
+^D:\CPP_PROJECT\TELEGRAM_BOT\BUILD\CMAKEFILES\D503E0B72AB649F1D21C4D54BB40702D\INSTALL_FORCE.RULE
+setlocal
+cd .
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
